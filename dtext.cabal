@@ -1,0 +1,30 @@
+name:                dtext
+version:             1.0
+synopsis:            Difference text
+category:            Data
+stability:      	   provisional
+license:             PublicDomain
+license-file:        LICENSE
+author:              Nis N. Wegmann
+maintainer:          niswegmann@gmail.com
+homepage:            https://github.com/niswegmann/dtext
+extra-source-files:  README.md
+build-type:          Simple
+cabal-version:       >= 1.10
+
+description:
+
+  A difference text is a functional representation of a text
+  which supports /O(1)/ appending. Difference texts are in
+  particular useful for logging and pretty printing.
+
+source-repository head
+  type:     git
+  location: https://github.com/niswegmann/dtext.git
+
+library
+  hs-source-dirs:    src
+  default-language:  Haskell2010
+  build-depends:     base (>= 4.0), text (>= 0.11)
+  ghc-options:       -O2 -Wall -fwarn-tabs
+  exposed-modules:   Data.DText
