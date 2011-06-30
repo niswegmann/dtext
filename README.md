@@ -1,6 +1,9 @@
 DText
 =====
 
+Overview
+--------
+
 A difference text is a functional representation of a text
 which supports /O(1)/ appending. Difference texts are in
 particular useful for logging and pretty printing.
